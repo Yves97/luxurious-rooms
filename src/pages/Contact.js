@@ -32,7 +32,7 @@ export default class Contact extends React.Component{
             <>
             
             <div className="login-page">
-            <h3>Remplir ce formulaire pour nous contatcter</h3>
+            <h3>Contact Us</h3>
                 <div className="form">
                     <form className="register-form" onSubmit={this.postDataHandler}>
                         <input type="text" placeholder="name" value={this.state.name} onChange={ (e) =>this.setState({name: e.target.value}) } />
