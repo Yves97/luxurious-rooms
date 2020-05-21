@@ -1,6 +1,6 @@
 import React from 'react'
 
-import result from '../result'
+import Axios from '../axios'
 // import Hero from '../components/Hero'
 
 // import Banner from '../components/Banner'
@@ -23,7 +23,7 @@ export default class Contact extends React.Component{
             password : this.state.password,
             email : this.state.email
         }
-        result.post('/marks.json', Data )
+        Axios.post('/marks.json', Data )
             .then(response => console.log(response))
             .catch(err => console.log(err))
     }
